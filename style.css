@@ -1,0 +1,380 @@
+/* ===== BASE STYLES ===== */
+body {
+  font-family: 'Copperplate', 'Copperplate Gothic Light', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: 
+    linear-gradient(rgba(230, 230, 250, 0.85), rgba(230, 230, 250, 0.85)),
+    url('https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg') center/cover fixed no-repeat;
+  min-height: 100vh;
+  color: #4b4b4b;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: rgba(106, 90, 205, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+  border-bottom: 3px solid #9370db;
+  backdrop-filter: blur(5px);
+}
+
+header h1 {
+  font-family: 'Copperplate Gothic Bold', Copperplate, fantasy;
+  font-size: 2.8rem;
+  margin: 0.5rem 0 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+header p {
+  font-family: Copperplate, 'Copperplate Gothic Light', serif;
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* ===== AVATAR STYLES ===== */
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.waving-gif {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== SECTION STYLES ===== */
+section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(147, 112, 219, 0.15);
+  border: 1px solid rgba(218, 191, 216, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 25px rgba(147, 112, 219, 0.2);
+}
+
+h2 {
+  font-family: 'Copperplate Gothic Bold', Copperplate, fantasy;
+  color: #7b68ee;
+  border-bottom: 2px dashed #b399d4;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ===== EDUCATION STYLES ===== */
+.education-item {
+  margin-bottom: 1.5rem;
+  padding: 1.8rem;
+  background: rgba(230, 230, 250, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid #6a5acd;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-3px);
+}
+
+.education-item h3 {
+  color: #6a5acd;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.institution {
+  font-weight: bold;
+  color: #7b68ee;
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+.duration {
+  color: #666;
+  font-style: italic;
+  margin: 0.3rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.achievements {
+  padding-left: 1rem;
+}
+
+.achievements li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style-type: none;
+  font-size: 0.95rem;
+  padding-left: 1.5rem;
+}
+
+.achievements li::before {
+  content: "▹";
+  color: #7b68ee;
+  position: absolute;
+  left: 0;
+}
+
+/* ===== INTERESTS STYLES ===== */
+.interests-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+.interest-item {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(147, 112, 219, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(218, 191, 216, 0.3);
+}
+
+.interest-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(147, 112, 219, 0.2);
+}
+
+.interest-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.interest-item h3 {
+  color: #6a5acd;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.interest-item p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== SKILLS STYLES ===== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.skill-category {
+  background: rgba(230, 230, 250, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.skill-category h3 {
+  color: #7b68ee;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px dashed #b399d4;
+  padding-bottom: 0.5rem;
+}
+
+.skill-category ul {
+  padding-left: 1.2rem;
+}
+
+.skill-category li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style-type: none;
+}
+
+.skill-category li::before {
+  content: "•";
+  color: #7b68ee;
+  position: absolute;
+  left: -1rem;
+}
+
+/* ===== PROJECTS STYLES ===== */
+.project {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #b399d4;
+}
+
+.project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.project h3 {
+  color: #6a5acd;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project-link {
+  display: inline-block;
+  background: #6a5acd;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #7b68ee;
+}
+
+/* ===== CONTACT FORM STYLES ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #b399d4;
+  border-radius: 8px;
+  font-family: Copperplate, 'Copperplate Gothic Light', serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6a5acd;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #6a5acd;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Copperplate Gothic Bold', Copperplate, fantasy;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #7b68ee;
+  transform: translateY(-2px);
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+  background: rgba(106, 90, 205, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-family: Copperplate, 'Copperplate Gothic Light', serif;
+  border-top: 3px solid #9370db;
+  backdrop-filter: blur(5px);
+}
+
+footer p {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #d8bfd8;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 1.8rem;
+    margin: 1.5rem auto;
+  }
+  
+  .education-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .interests-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
